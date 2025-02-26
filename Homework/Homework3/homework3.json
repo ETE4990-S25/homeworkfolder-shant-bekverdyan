@@ -1,0 +1,13 @@
+[[
+  {
+    "Name": "Jeremy Clarkson",
+    "Age": 64,
+    "Email": "jclarkson@cpp.edu"
+  },
+  {
+    "Name": "Shant Bekverdyan",
+    "Age": 26,
+    "Email": "sbekverdyan@cpp.edu",
+    "Student ID": 12345
+  }
+]
