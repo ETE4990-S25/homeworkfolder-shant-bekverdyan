@@ -1,0 +1,72 @@
+[
+    {
+      "title": "Casablanca",
+      "year": 1942,
+      "genre": ["Romance", "War"],
+      "director": "Michael Curtiz",
+      "actors": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"],
+      "plot": "A cynical American expatriate struggles to decide whether to help his former lover and her fugitive husband escape the Nazis in French Morocco.",
+      "rating": 8.5,
+      "streaming_service": ["HBO Max", "Amazon Prime Video"]
+    },
+    {
+      "title": "Titanic",
+      "year": 1997,
+      "genre": ["Romance"],
+      "director": "James Cameron",
+      "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+      "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      "rating": 7.9,
+      "streaming_service": ["Amazon Prime Video", "Paramount+"] 
+    },
+    {
+      "title": "Moonlight",
+      "year": 2016,
+      "genre": ["Romance", "Coming-of-age"],
+      "director": "Barry Jenkins",
+      "actors": ["Trevante Rhodes", "André Holland", "Janelle Monáe"],
+      "plot": "A young black man grows up in Miami during the War on Drugs, grappling with his sexuality and identity while experiencing the ecstasy, pain, and beauty of falling in love.",
+      "rating": 7.4,
+      "streaming_service": ["Netflix", "Hulu"]
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "year": 2004,
+      "genre": ["Romance", "Drama"],
+      "director": "Michel Gondry",
+      "actors": ["Jim Carrey", "Kate Winslet", "Kirsten Dunst"],
+      "plot": "A couple undergoes a procedure to erase each other from their memories when their relationship turns sour.",
+      "rating": 8.3,
+      "streaming_service": ["Peacock"]
+    },
+    {
+      "title": "Amelie",
+      "year": 2001,
+      "genre": ["Romance", "Fantasy"],
+      "director": "Jean-Pierre Jeunet",
+      "actors": ["Audrey Tautou", "Mathieu Kassovitz", "Jamel Debbouze"],
+      "plot": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
+      "rating": 8.3,
+      "streaming_service": ["Amazon Prime Video", "Apple TV"]
+    },
+    {
+      "title": "Brokeback Mountain",
+      "year": 2005,
+      "genre": ["Romance", "Western"],
+      "director": "Ang Lee",
+      "actors": ["Heath Ledger", "Jake Gyllenhaal", "Michelle Williams"],
+      "plot": "The story of a forbidden and secretive relationship between two cowboys, and their lives over the years.",
+      "rating": 7.7,
+      "streaming_service": ["Hulu"]
+    },
+    {
+      "title": "The Princess Bride",
+      "year": 1987,
+      "genre": ["Romance", "Adventure"],
+      "director": "Rob Reiner",
+      "actors": ["Cary Elwes", "Robin Wright", "Mandy Patinkin"],
+      "plot": "While home sick in bed, a young boy's grandfather reads him a story called The Princess Bride.",
+      "rating": 8.1,
+      "streaming_service": ["Disney+"]
+    }
+  ]
