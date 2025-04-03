@@ -1,20 +1,30 @@
 import time
 import math
 
-def is_prime(number):
+def is_prime(n):
     
-    """checks to see if a number is prime or not"""
+    """checks if a number is a prime number"""
     
-    if number <= 1:
-        return False 
-    if number <= 3:
-        return True   
-    if number % 2 == 0 or number % 3 == 0:
-        return False  
-
-    i = 5
-    while i * i <= number:
-        if number % i == 0 or number % (i + 2) == 0:
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
             return False
-        i += 6
     return True
+
+def find_largest_prime(time_limit):
+
+    """finds largest prime number in the given time limit"""
+
+    start_time = time.time()
+    end_time = start_time + time_limit
+
+    largest_prime = 0
+    number = 0
+
+    while time.time() < end_time:
+        if is_prime(number):
+            largest_prime = number
+        number += 1
+
+    return largest_prime
