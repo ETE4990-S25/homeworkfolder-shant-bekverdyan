@@ -1,7 +1,7 @@
 import time
 import math
 import sys
-time_limit = 60
+time_limit = 20
 
 """checks if a number is a prime number"""
 def prime(n):
@@ -57,25 +57,31 @@ def factorial(n):
     return result
 
 largest_prime = find_largest(time_limit)
-print("Largest prime number in 1 minute:", largest_prime)
+print("Largest prime number in 1 minute =", largest_prime)
 
 #got help for this last part :'(
 if largest_prime > 0:
 
     try:
-
+        fibonacci_start_time = time.time()
+        fibonacci_end_time = fibonacci_start_time + time_limit
         fibonacci_result = fibonacci(largest_prime)
-        print("Fibonacci:", fibonacci_result)
+        fibonacci_elapsed_time = time.time() - fibonacci_start_time
+        print("Fibonacci number found. Number too large to display :(") #kept getting error code when trying to display the number
+        print("Fibonacci time:", fibonacci_elapsed_time)
 
     except OverflowError:
 
         print("Fibonacci too large")
 
-    factorial_result = factorial(15)
+    factorial_start_time = time.time()
+    factorial_end_time = factorial_start_time + time_limit
+    factorial_result = factorial(4)
+    factorial_elapsed_time = time.time() - factorial_start_time
     print("Factorial:", factorial_result)
-
+    print("Factorial time:", factorial_elapsed_time)
 else:
 
     print("No prime number found.")
 
-print("Complete)")
+print("Done")
