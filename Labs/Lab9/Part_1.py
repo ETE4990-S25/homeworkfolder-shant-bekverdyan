@@ -15,19 +15,23 @@ def log_level_count(log_file):
                 
                 if "INFO:" in top_line:
                     if "INFO" not in level_count:
-                        level_count["INFO"] = level_count["INFO", 0] + 1
+                        level_count["INFO"] = 0
+                    level_count["INFO"] += 1
 
                 elif "WARNING:" in top_line:
                     if "WARNING" not in level_count:
-                        level_count["WARNING"] = level_count["WARNING", 0] + 1
+                        level_count["WARNING"] = 0
+                    level_count["WARNING", 0] += 1
 
                 elif "ERROR:" in top_line:
                     if "ERROR" not in level_count:
-                        level_count["ERROR"] = level_count["ERROR", 0] + 1
+                        level_count["ERROR"] = 0
+                    level_count["ERROR", 0] += 1
 
                 elif "CRITICAL:" in top_line:
                     if "CRITICAL" not in level_count:
-                        level_count["CRITICAL"] = level_count["CRITICAL", 0] + 1
+                        level_count["CRITICAL"] = 0
+                    level_count["CRITICAL", 0] += 1
 
     except FileNotFoundError:
         print(f"File not found: {log_file}")
@@ -105,17 +109,27 @@ def summarize_logs(log_file):
 
 def main():
 
-    log_directory = "Logs"
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    log_directory = os.path.join(script_directory, "Logs")
 
     if not os.path.exists(log_directory) or not os.path.isdir(log_directory):
         print(f"Error: Directory '{log_directory}' not found.")
         return
 
-    log_files_to_analyze = ["my_app_utils_db","my_app_utils","my_app","RSVP_Agent_processing","systemd_core_performance","systemd_core","systemd",]
+    log_files_to_analyze = [
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\my_app_utils_db.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\my_app_utils.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\my_app.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\RSVP_Agent_processing.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\systemd_core_performance.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\systemd_core.log",
+        r"C:\Users\Shanto\Documents\GitHub\homeworkfolder-shant-bekverdyan\Labs\Lab9\Logs\systemd.log",
+    ]
 
     for log_file_name in log_files_to_analyze:
 
         log_file_path = os.path.join(log_directory, log_file_name)
+        print(f"Debugging: Trying to access file at path: '{log_file_path}'")
 
         if os.path.exists(log_file_path):
             summarize_logs(log_file_path)
